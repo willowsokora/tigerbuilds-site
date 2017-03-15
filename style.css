@@ -1,11 +1,5 @@
-.contain {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	z-index: 10;
-	background-color: #574d4e
+body {
+	background-color: #574d4f;
 }
 
 .content {
@@ -13,7 +7,7 @@
 	top: 50%;
 	left: 50%;
 	margin-top: -300px;
-	margin-left: -250px;
+	margin-left: -200px;
 
 	color: #f89939;
 	font-weight: black;
@@ -23,8 +17,8 @@
 }
 
 .logo {
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: 400px;
 }
 
 .btn-transparent {
@@ -38,4 +32,9 @@
 .buttons {
 	margin-top: -42px;
 	text-align: center;
+}
+
+a {
+	color: #f89939;
+	text-decoration: none;
 }

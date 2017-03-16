@@ -16,12 +16,49 @@
 			<div class="content">
 				<img class="logo" src="tiger_big.png">
 				<div class="buttons">
-					<a class="waves-effect waves-light btn-large" href="#">Get Updates</a>
+					<h5>Coming Fall 2017</h5>
+					<button data-target="updatesModal" class="waves-effect btn-large white modal-trigger">Get Updates</button>
+					<a href="#" class="waves-effect waves-light black btn-large">Sponsor Us</a>
 					<br />
-					<a href="http://mca.missouri.edu">MCA</a> | <a href="mailto:contact@tigerbuilds">Contact</a>
+					<a href="#">Contact</a>
 				</div>
+			</div>
+			<div id="updatesModal" class="modal">
+				<div class="modal-content">
+					<!--Form-->
+					<form>
+						<div class="input-field">
+						<input type="email" name="email" placeholder="email" autofocus="true" class="validate" id="emailinput">
+						<label for="email" data-error="Invalid email"></label>
+						<button class="waves-effect waves-light btn" id="signupbutton">Sign up</button>
+						</div>
+						
+					</form>
+				</div>
+				<div class="modal-footer"></div>
 			</div>
 		</div>
 		<div class="col m4"></div>
 	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.modal').modal();
+		});
+
+		$('#signupbutton').on('click', function(e) {
+			var email = $('#emailinput').val();
+			if(validateEmail(email)) {
+				//TODO:
+				//Send email back to server to add to mailing list
+				//Use a callback here with loading circle thing
+				//After validation notify user of success
+				$('.modal').modal('close');
+			}
+		});
+
+		function validateEmail(email) {
+			var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+   			 return re.test(email);
+		}
+	</script>
 </body>

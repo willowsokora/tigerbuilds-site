@@ -1,24 +1,29 @@
 body {
 	background-color: #574d4f;
 	background: url("columns.jpg")no-repeat;
-	background-size: 100%;
+	background-size: contain contain;
+	background-position: 50% 40%;
 }
 
 .content {
+	background-color: RGBA(87, 77, 79, 0.6);
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	margin-top: -300px;
-	margin-left: -200px;
+	margin-left: -225px;
 
 	color: #f89939;
 	font-weight: black;
 	font-family: Outage;
     font-size: 18px;
     line-height: 26px;
+    width: 450px;
 }
 
 .logo {
+	display: block;
+	margin: auto;
 	width: 400px;
 	height: 400px;
 }
@@ -31,24 +36,31 @@ body {
 	font-family: Outage;
 }
 
-.btn-orange {
-	background-color: #f89939;
-}
-
-.btn-orage:hover {
-	background-color: #f89939;
-}
-
 .buttons {
 	text-align: center;
+	margin-bottom: 40px;
+}
+
+.btn-large {
+	color: #f89939;
+	margin-bottom: 10px;
 }
 
 a {
 	color: #f89939;
 	text-decoration: none;
+	font-family: Outage;
 }
 
 @font-face {
 	font-family: "Outage";
 	src: url("Outage.ttf") format("truetype");
+}
+
+#signupbutton {
+	float: right;
+}
+
+label {
+	padding-top: 10px;
 }

@@ -12,13 +12,13 @@ body {
 	left: 50%;
 	margin-top: -300px;
 	margin-left: -225px;
+	width: 450px;
 
 	color: #f89939;
 	font-weight: black;
 	font-family: Outage;
     font-size: 18px;
-    line-height: 26px;
-    width: 450px;
+    text-align: center;
 }
 
 .logo {
@@ -37,7 +37,6 @@ body {
 }
 
 .buttons {
-	text-align: center;
 	margin-bottom: 40px;
 }
 
@@ -63,4 +62,9 @@ a {
 
 label {
 	padding-top: 10px;
+}
+
+h2 {
+	display: inline;
+	margin-bottom: 0px;	
 }

@@ -45,7 +45,7 @@ body {
 }
 
 a {
-	color: #f89939;
+	color: black;
 	text-decoration: none;
 	font-family: Outage;
 }
@@ -64,6 +64,5 @@ label {
 }
 
 h2 {
-	display: inline;
-	margin-bottom: 0px;	
+	display: inline;	
 }

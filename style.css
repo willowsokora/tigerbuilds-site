@@ -1,5 +1,7 @@
 body {
 	background-color: #574d4f;
+	background: url("columns.jpg")no-repeat;
+	background-size: 100%;
 }
 
 .content {
@@ -11,7 +13,7 @@ body {
 
 	color: #f89939;
 	font-weight: black;
-	font-family: 'Roboto', serif;
+	font-family: Outage;
     font-size: 18px;
     line-height: 26px;
 }
@@ -26,7 +28,15 @@ body {
 	margin: 5px;
 	border-style: solid!important;
 	border-width: 1px: border-color: white;
-	font-family: Roboto;
+	font-family: Outage;
+}
+
+.btn-orange {
+	background-color: #f89939;
+}
+
+.btn-orage:hover {
+	background-color: #f89939;
 }
 
 .buttons {
@@ -36,4 +46,9 @@ body {
 a {
 	color: #f89939;
 	text-decoration: none;
+}
+
+@font-face {
+	font-family: "Outage";
+	src: url("outage.ttf") format("truetype");
 }

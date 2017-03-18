@@ -16,8 +16,8 @@ body {
 	color: #f89939;
 	font-weight: black;
 	font-family: Outage;
-    font-size: 18px;
-    text-align: center;
+ 	font-size: 18px;
+	text-align: center;
 }
 
 .logo {
@@ -35,9 +35,6 @@ body {
 	font-family: Outage;
 }
 
-.buttons {
-	margin-bottom: 10px;
-}
 
 .btn-large {
 	color: #f89939;
@@ -65,4 +62,8 @@ label {
 
 h2 {
 	display: inline;	
+}
+
+.fa {
+	margin-bottom: 10px;
 }

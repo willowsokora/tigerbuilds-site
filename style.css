@@ -33,7 +33,7 @@ body {
 }
 
 a {
-    color: #333132;
+	color: #333132;
 }
 
 @font-face {
@@ -54,13 +54,13 @@ h2 {
 }
 
 .fa {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .white {
-    background-color: #FEF8E2 !important;
+	background-color: #FEF8E2 !important
 }
 
 .black {
-    background-color: #333132 !important;
+	background-color: #333132 !important
 }

@@ -1,58 +1,67 @@
 body {
-	background-color: #574d4f;
-	background: url("columns.jpg")no-repeat center center;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
-	position: fixed;
+    background-color: #574d4f;
+    background: url("columns-compressed.jpg") no-repeat center center;
+	background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
 }
 
 .content {
-	background-color: RGBA(87, 77, 79, 0.6);
-	color: #f89939;
-	font-weight: black;
-	font-family: Outage;
- 	font-size: 18px;
-	text-align: center;
-	max-width: 500px;
-	display: block;
-	margin: auto;
-	margin-top: 10%;
+    background-color: RGBA(87, 77, 79, 0.6);
+    color: #f89939;
+    font-weight: #333132;
+    font-family: Outage;
+    font-size: 18px;
+    text-align: center;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
 }
 
 .logo {
-	width: 100%;
-	max-width: 300px;
-	display: block;
-	margin: auto;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: auto;
 }
 
 .btn-large {
-	color: #f89939;
-	margin-bottom: 10px;
+    color: #f89939;
+    margin-bottom: 10px;
 }
 
 a {
-	color: black;
+	color: #333132;
 }
 
 @font-face {
-	font-family: "Outage";
-	src: url("Outage.ttf") format("truetype");
+    font-family: "Outage";
+    src: url("Outage.ttf") format("truetype");
 }
 
 #signupbutton {
-	float: right;
+    float: right;
 }
 
 label {
-	padding-top: 10px;
+    padding-top: 10px;
 }
 
 h2 {
-	display: inline;	
+    display: inline;
 }
 
 .fa {
 	margin-bottom: 10px;
+}
+
+.white {
+	background-color: #FEF8E2 !important;
+}
+
+.black {
+	background-color: #333132 !important;
 }

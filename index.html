@@ -1,4 +1,3 @@
-
 <head>
 	<meta name="google-site-verification" content="AwC-4I4ciE8EMCvjIo6uuDfPAooPyJxjjoGcJYo2SHM" />
 	<title>TigerHacks</title>
@@ -10,6 +9,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 	<script src="https://use.fontawesome.com/2dcf4e58a9.js"></script>
 </head>
+
 <body>
 	<div class="row">
 		<div class="col m4"></div>
@@ -17,7 +17,7 @@
 			<div class="content">
 				<img class="logo" src="tiger_big.png">
 				<h2>tiger</h2>
-				<h2 style="color: black;">hacks</h2>
+				<h2 style="color: #333132;">hacks</h2>
 				<h5>Coming Fall 2017</h5>
 				<button data-target="updatesModal" class="waves-effect waves-light btn-large black modal-trigger">Get Updates</button>
 				<a href="Sponsorship.pdf" class="waves-effect waves-dark white btn-large" target="_blank">Sponsor Us</a>
@@ -32,9 +32,9 @@
 					<!--Form-->
 					<form>
 						<div class="input-field">
-						<input type="email" name="email" placeholder="email" autofocus="true" class="validate" id="emailinput">
-						<label for="email" data-error="Invalid email"></label>
-						<button class="waves-effect waves-light btn" id="signupbutton">Sign up</button>
+							<input type="email" name="email" placeholder="Email" autofocus="true" class="validate" id="emailinput">
+							<label for="email" data-error="Invalid email"></label>
+							<button class="waves-effect waves-light btn" id="signupbutton">Sign Up</button>
 						</div>
 					</form>
 				</div>
@@ -44,13 +44,13 @@
 		<div class="col m4"></div>
 	</div>
 	<script type="text/javascript">
-		$(document).ready(function() {
+		$(document).ready(function () {
 			$('.modal').modal();
 		});
 
-		$('#signupbutton').on('click', function(e) {
+		$('#signupbutton').on('click', function (e) {
 			var email = $('#emailinput').val();
-			if(validateEmail(email)) {
+			if (validateEmail(email)) {
 				//TODO:
 				//Send email back to server to add to mailing list
 				//Use a callback here with loading circle thing
@@ -61,7 +61,7 @@
 
 		function validateEmail(email) {
 			var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-   			return re.test(email);
+			return re.test(email);
 		}
 	</script>
 </body>

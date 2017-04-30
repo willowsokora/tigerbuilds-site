@@ -1,11 +1,11 @@
 body {
-    background-color: #574d4f;
-    background: url("columns-compressed.jpg") no-repeat center center;
-	background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
+	background-color: #574d4f;
+	background: url("columns.jpg")no-repeat center center;
+	background-attachment: fixed
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: fixed;
 }
 
 .content {
@@ -63,5 +63,5 @@ h2 {
 }
 
 .black {
-	background-color: #333132 !important;
+	background-color: #333132!important
 }

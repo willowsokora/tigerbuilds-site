@@ -25,7 +25,6 @@ body {
 .content {
 	background-color: RGBA(87, 77, 79, 0.6);
     color: #f89939;
-    max-width: 500px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 15px;
@@ -80,4 +79,8 @@ h2 {
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 768px) {
+	.hide-mobile { display: none !important; }
 }

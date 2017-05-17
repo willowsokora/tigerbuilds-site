@@ -14,15 +14,18 @@ body {
 	height: 100vh;
 }
 
+.floater {
+	text-align: center;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    position: absolute;   
+}
+
 .content {
 	background-color: RGBA(87, 77, 79, 0.6);
     color: #f89939;
-    text-align: center;
     max-width: 500px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    position: absolute;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 15px;

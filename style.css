@@ -7,7 +7,7 @@ body {
 
 .fill {
 	background-color: #574d4f;
-	background: url("columns.jpg");
+	background: url("columns.jpg") center;
 	background-size: cover;
 	position: relative;
 	width: 100%;

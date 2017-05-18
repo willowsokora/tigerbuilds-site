@@ -25,21 +25,19 @@
 
 <body>
 	<div class="fill">
-		<div class="floater">
-			<div class="content">
-				<img class="logo" src="tiger_big.png">
-				<h2>tiger</h2>
-				<h2 style="color: #333132;">hacks</h2>
-				<h5 id="date">October 13-15 2017</h5>
-				<h5 id="countdown" style="color: #333132;"></h5>
-				<a href="http://register.tiger-hacks.com" class="waves-effect waves-light btn-large black">Apply</a>
-				<a href="Sponsorship.pdf" class="waves-effect waves-dark white btn-large" target="_blank">Sponsor Us</a>
-				<br />
-				<a href="mailto:tigerhacksHD@gmail.com" target="_blank"><i class="fa fa-2x fa-envelope-square" aria-hidden="true"></i></a>
-				<a href="https://twitter.com/tigerhackshd" target="_blank"><i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></a>
-				<a href="http://facebook.com/tigerhacks" target="_blank"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a>
-				<br />
-			</div>
+		<div class="content">
+			<img class="logo" src="tiger_big.png">
+			<h2>tiger</h2>
+			<h2 style="color: #333132;">hacks</h2>
+			<h5 id="date">October 13-15 2017</h5>
+			<h5 id="countdown" style="color: #333132;"></h5>
+			<a href="http://register.tiger-hacks.com" class="waves-effect waves-light btn-large black">Apply</a>
+			<a href="Sponsorship.pdf" class="waves-effect waves-dark white btn-large" target="_blank">Sponsor Us</a>
+			<br />
+			<a href="mailto:tigerhacksHD@gmail.com" target="_blank"><i class="fa fa-2x fa-envelope-square" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/tigerhackshd" target="_blank"><i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></a>
+			<a href="http://facebook.com/tigerhacks" target="_blank"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a>
+			<br />
 		</div>
 		
 		<div class="bottom hide-mobile">
@@ -50,12 +48,82 @@
 		</div>
 		
 	</div>
-	<div id="about" class="container"></div>
-	<div id="sponsors" class="container"></div>
-	<div id="team" class="container"></div>
-	<div id="faq" class="container"></div>
+	<div id="about">
+		<div class="banner"  onclick="expand('#aboutinfo');">
+			<h1>About</h1>
+		</div>
+		<div id="aboutinfo" class="container row hide-mobile">
+			<div class="col s12 m6">
+				<h5>What is TigerHacks?</h5>
+				<p>TigerHacks is a hackathon hosted at the University of Missouri in Columbia Oct. 13-15 for students of all backgrounds with a passion for technology, design, and, most importantly, building things. TigerHacks brings together hundreds of students from around the country for 48 hours of collaboration, problem solving, and building. We will provide a unique opportunity for students to work with resources and companies they cannot find anywhere else. [[Short blurb about the theme]]</p> 
+			</div>
+			<div class="col s12 m6">
+				<h5>Why that theme tho?</h5>
+				<p>Well tbh it's a pretty cool theme, and we like it a lot. We think it has a lot of potential for some dope projects and that's what we'd like to see. If you don't make an awesome project with this theme then like, what are you even doing with your life??? Nah jk bro whatever you want to make is fine, that's the fun of a hackathon!</p>
+			</div>
+		</div>
+	</div>
+	<div id="sponsors">
+		<div class="banner" onclick="expand('#sponsorinfo');">
+			<h1>Sponsors</h1>
+		</div>
+		<div id="sponsorinfo" class="container row hide-mobile">
+			<div class="col s12">
+				<img src="google.png"/>
+			</div>
+			<div class="col s12 m6"></div>
+			<div class="col s12 m6"></div>
+			<div class="col s12 m4"></div>
+			<div class="col s12 m4"></div>
+			<div class="col s12 m4"></div>
+		</div>
+	</div>
+	<div id="team"></div>
+		<div class="banner" onclick="expand('#teaminfo');">
+			<h1>Team</h1>
+		</div>
+		<div id="teaminfo" class="container row hide-mobile">
+			<div class="col s12 m4 l4">
+				<div class="member">
+					<img src="holt.png" class="circle" />
+					<h5>Holt Skinner</h5>
+					<p>Leader</p>
+				</div>
+			</div>
+			<div class="col s12 m4 l4">
+				<div class="member">
+					<img src="holt.png" class="circle" />
+					<h5>Holt Skinner</h5>
+					<p>Leader</p>
+				</div>
+			</div>
+			<div class="col s12 m4 l4">
+				<div class="member">
+					<img src="holt.png" class="circle" />
+					<h5>Holt Skinner</h5>
+					<p>Leader</p>
+				</div>
+			</div>
+		</div>
+	<div id="faq">
+		<div class="banner" onclick="expand('#faqinfo');">
+			<h1>FAQ</h1>
+		</div>
+		<div id="faqinfo" class="container row hide-mobile">
+		</div>
+	</div>
 
 	<script type="text/javascript">
+		$('#countdown').hide();
+		countdown();
+		window.setInterval(countdown, 1000);
+
+		if($(window).width() < 768) {
+			$.each($('.hide-mobile'), function(k, v) {
+				$(v).hide();
+			});
+		}
+		
 		function scroll(elem) {
 			$('html, body').animate({
 				scrollTop: $(elem).offset().top
@@ -84,16 +152,19 @@
 			text += parseInt(seconds, 10) + "s";
 			$('#countdown').text(text);
 		}
-		countdown();
-		$('#countdown').hide();
-		window.setInterval(countdown, 1000);
+
 		$('#date').mouseenter(function() {
 			$('#date').hide();
 			$('#countdown').show();
 		});
+
 		$('#countdown').mouseleave(function() {
 			$('#date').show();
 			$('#countdown').hide();
 		});
+
+		function expand(elem) {
+			$(elem).slideDown(1000);
+		}
 	</script>
 </body>

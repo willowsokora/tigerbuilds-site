@@ -78,6 +78,7 @@ h2 {
 
 h1 {
 	margin: 0px;
+	cursor: pointer;
 }
 
 .banner {
@@ -95,7 +96,7 @@ p {
 }
 
 .member img {
-	max-width: 80%;
+	max-width: 50%;
 }
 
 .member {

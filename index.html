@@ -14,7 +14,7 @@
 <head>
 	<meta name="google-site-verification" content="AwC-4I4ciE8EMCvjIo6uuDfPAooPyJxjjoGcJYo2SHM" />
 	<title>TigerHacks</title>
-	<link rel="icon" href="tiger_small.png">
+	<link rel="icon" href="res/tiger_small.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -26,7 +26,7 @@
 <body>
 	<div class="fill">
 		<div class="content">
-			<img class="logo" src="tiger_big.png">
+			<img class="logo" src="res/tiger_big.png">
 			<h2>tiger</h2>
 			<h2 style="color: #333132;">hacks</h2>
 			<h5 id="date">October 13-15 2017</h5>
@@ -41,10 +41,10 @@
 		</div>
 		
 		<div class="bottom hide-mobile">
-			<a href="#" onclick="scroll('#about');">About</a> |
-			<a href="#" onclick="scroll('#sponsors');">Sponsors</a> | 
-			<a href="#" onclick="scroll('#team');">Team</a> | 
-			<a href="#" onclick="scroll('#faq');">FAQ</a>
+			<a href="#about" class="scroll">About</a> |
+			<a href="#sponsors" class="scroll">Sponsors</a> | 
+			<a href="#team" class="scroll">Team</a> | 
+			<a href="#faq" class="scroll">FAQ</a>
 		</div>
 		
 	</div>
@@ -68,9 +68,7 @@
 			<h1>Sponsors</h1>
 		</div>
 		<div id="sponsorinfo" class="container row hide-mobile">
-			<div class="col s12">
-				<img src="google.png"/>
-			</div>
+			<div class="col s12"></div>
 			<div class="col s12 m6"></div>
 			<div class="col s12 m6"></div>
 			<div class="col s12 m4"></div>
@@ -82,26 +80,118 @@
 		<div class="banner" onclick="expand('#teaminfo');">
 			<h1>Team</h1>
 		</div>
-		<div id="teaminfo" class="container row hide-mobile">
-			<div class="col s12 m4 l4">
-				<div class="member">
-					<img src="holt.png" class="circle" />
-					<h5>Holt Skinner</h5>
-					<p>Leader</p>
+		<div id="teaminfo" class="container hide-mobile">
+			<div class="row">
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/holt.png" class="circle" />
+						<h6>Holt Skinner</h6>
+						<p>Head Honcho</p>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/alain.png" class="circle" />
+						<h6>Alain Chen</h6>
+						<p>Turing Complete</p>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/luke.jpg" class="circle" />
+						<h6>Luke Guerdan</h6>
+						<p>Better president than Trump</p>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/jacob.jpg" class="circle" />
+						<h6>Jacob Sokora</h6>
+						<p>$w@g Man</p>
+					</div>
 				</div>
 			</div>
-			<div class="col s12 m4 l4">
-				<div class="member">
-					<img src="holt.png" class="circle" />
-					<h5>Holt Skinner</h5>
-					<p>Leader</p>
+			<div class="row">
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/mel.png" class="circle" />
+						<h6>Melissa Hollingshed</h6>
+						<p>Fulfills the diversity requirement</p>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/sabah.png" class="circle" />
+						<h6>Sabah Mallick</h6>
+						<p>Good luck pronouncing her name</p>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/marissa.png" class="circle" />
+						<h6>Marissa Watkins</h6>
+						<p>She has a cat I guess</p>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/jack.png" class="circle" />
+						<h6>Jack Peterson</h6>
+						<p>He doesn't have a profile pic :(</p>
+					</div>
 				</div>
 			</div>
-			<div class="col s12 m4 l4">
-				<div class="member">
-					<img src="holt.png" class="circle" />
-					<h5>Holt Skinner</h5>
-					<p>Leader</p>
+			<div class="row">
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/ferris.jpg" class="circle" />
+						<h6>Ferris Dweik</h6>
+						<p>Skips class to dance in parades</p>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/andy.png" class="circle" />
+						<h6>Andy Hine</h6>
+						<p>Just look at that hair</p>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/humera.jpg" class="circle" />
+						<h6>Humera Lodhi</h6>
+						<p>I'm running out of things to say about these people I don't know</p>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/christian.png" class="circle" />
+						<h6>christaincw</h6>
+						<p>Wow slack duplicated default pictures, hmmm</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/chalyn.jpg" class="circle" />
+						<h6>chalyn85</h6>
+						<p>I'm not sure what her name is</p>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/daniel.jpg" class="circle" />
+						<h6>Daniel Hanson</h6>
+						<p>Oh Danny boy</p>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="member">
+						<img src="res/wmmhyc.png" class="circle" />
+						<h6>wmmhyc</h6>
+						<p>A default pictures but at least it's original</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -113,6 +203,37 @@
 		</div>
 	</div>
 
+	<div class="dropdown black">
+		<ul>
+			<li><a href="#about" class="scroll">About</a></li>
+			<li><a href="#sponsors" class="scroll">Sponsors</a></li>
+			<li><a href="#team" class="scroll">Team</a></li>
+			<li><a href="#faq" class="scroll">FAQ</a></li>
+			<li><a href="#" id="to-top"><i class="fa fa-chevron-up fa-2x"></i></a></li>
+		</ul>
+	</div>
+
+	<footer class="page-footer">
+		<div class="container row">
+			<div class="col l4 s12 push-l4" style="text-align: center;">
+				<a href="mailto:tigerhacksHD@gmail.com" target="_blank">tigerhackshd@gmail.com</a>
+			</div>
+			<div class="col l6 s12 pull-l4">
+				<ul>
+					<li><a href="#about" class="scroll">About</a></li>
+					<li><a href="#sponsors" class="scroll">Sponsors</a></li>
+					<li><a href="#team" class="scroll">Team</a></li>
+					<li><a href="#faq" class="scroll">FAQ</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				<p>&copy; 2017 Tiger Hacks</p>
+			</div>
+		</div>
+	</footer>
+
 	<script type="text/javascript">
 		$('#countdown').hide();
 		countdown();
@@ -122,12 +243,6 @@
 			$.each($('.hide-mobile'), function(k, v) {
 				$(v).hide();
 			});
-		}
-		
-		function scroll(elem) {
-			$('html, body').animate({
-				scrollTop: $(elem).offset().top
-			}, 2000);
 		}
 
 		function countdown() {
@@ -166,5 +281,36 @@
 		function expand(elem) {
 			$(elem).slideDown(1000);
 		}
+
+		$('.dropdown').hide();
+		var fixed = false;
+    	$(document).scroll(function() {
+        	if ($(this).scrollTop() > 250) {
+            	if (!fixed) {
+                	fixed = true;
+                	$('.dropdown').show();
+            	}
+        	} else {
+            	if (fixed) {
+                	fixed = false;
+        	        $('.dropdown').hide();
+        	    }
+        	}
+    	});
+
+    	$('.scroll').click(function() {
+    		var elem = $($(this).attr('href'));
+    		$('html, body').animate({
+				scrollTop: $(elem).offset().top
+			}, 2000);
+			return false;
+    	})
+
+    	$('#to-top').click(function() {
+    		$('html, body').animate({
+				scrollTop: 0
+			}, 2000);
+			return false;
+    	});
 	</script>
 </body>

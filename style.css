@@ -2,11 +2,12 @@ body {
 	font-family: Outage;
 	font-size: 18px;
 	color: #333132;
+	background-color: #FEF8E2;
 }
 
 .fill {
 	background-color: #574d4f;
-	background: url("columns.jpg") center;
+	background: url("res/columns.jpg") center;
 	background-size: cover;
 	position: relative;
 	width: 100%;
@@ -92,14 +93,37 @@ p {
 	margin-top: 0px;
 }
 
-h5 {
-	margin-bottom: 0px;
-}
-
-img {
+.member img {
 	max-width: 80%;
 }
 
 .member {
 	text-align: center;
+}
+
+h6 {
+	font-size: 130%;
+}
+
+footer {
+	background-color: #f89939 !important;
+	color: #333132 !important;
+}
+
+.footer-copyright {
+	color: #333132 !important;
+}
+
+.dropdown {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	text-align: right;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 3px;
+}
+
+.dropdown a {
+	color: #FEF8E2 !important;
 }

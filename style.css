@@ -128,3 +128,16 @@ footer {
 .navigator a {
 	color: #FEF8E2 !important;
 }
+
+.tab {
+	background-color: #FEF8E2;
+}
+
+.indicator {
+	background-color: #f89939 !important;
+}
+
+.tablink {
+	color: #333132 !important;
+	font-size: 160% !important;
+}

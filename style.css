@@ -28,15 +28,15 @@ body {
 }
 
 .logo {
-	width: 100%;
-	max-width: 300px;
-	display: block;
-	margin: auto;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: auto;
 }
 
 .btn-large {
-	color: #f89939;
-	margin-bottom: 10px;
+    color: #f89939;
+    margin-bottom: 10px;
 }
 
 a {
@@ -44,20 +44,20 @@ a {
 }
 
 @font-face {
-	font-family: "Outage";
-	src: url("Outage.ttf") format("truetype");
+    font-family: "Outage";
+    src: url("Outage.ttf") format("truetype");
 }
 
 #signupbutton {
-	float: right;
+    float: right;
 }
 
 label {
-	padding-top: 10px;
+    padding-top: 10px;
 }
 
 h2 {
-	display: inline;
+    display: inline;
 }
 
 .white {
@@ -141,4 +141,18 @@ footer {
 .tablink {
 	color: #333132 !important;
 	font-size: 160% !important;
+}
+
+p.major {
+	font-style: italic;
+}
+
+.gold-sponsor img {
+	width: 500px;
+ 	height: 300px;
+}
+
+.bronze-sponsor img{
+	width: 300px;
+ 	height: 100px;
 }

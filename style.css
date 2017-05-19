@@ -86,7 +86,6 @@ h1 {
 	background-color: #333132;
 	color: #FEF8E2;
 	padding: 10px;
-	margin-bottom: 20px;
 }
 
 p {
@@ -116,7 +115,7 @@ footer {
 	color: #333132 !important;
 }
 
-.dropdown {
+.navigator {
 	position: fixed;
 	right: 10px;
 	bottom: 10px;
@@ -126,6 +125,6 @@ footer {
 	border-radius: 3px;
 }
 
-.dropdown a {
+.navigator a {
 	color: #FEF8E2 !important;
 }

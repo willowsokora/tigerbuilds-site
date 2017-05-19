@@ -40,16 +40,9 @@
 			<br />
 		</div>
 		
-		<div class="bottom hide-mobile">
-			<a href="#about" class="scroll">About</a> |
-			<a href="#sponsors" class="scroll">Sponsors</a> | 
-			<a href="#team" class="scroll">Team</a> | 
-			<a href="#faq" class="scroll">FAQ</a>
-		</div>
-		
 	</div>
 	<div id="about">
-		<div class="banner"  onclick="expand('#aboutinfo');">
+		<div class="banner"  data-target="#aboutinfo">
 			<h1>About</h1>
 		</div>
 		<div id="aboutinfo" class="container row hide-mobile">
@@ -64,7 +57,7 @@
 		</div>
 	</div>
 	<div id="sponsors">
-		<div class="banner" onclick="expand('#sponsorinfo');">
+		<div class="banner" data-target="#sponsorinfo">
 			<h1>Sponsors</h1>
 		</div>
 		<div id="sponsorinfo" class="container row hide-mobile">
@@ -77,10 +70,11 @@
 		</div>
 	</div>
 	<div id="team"></div>
-		<div class="banner" onclick="expand('#teaminfo');">
+		<div class="banner" data-target="#teaminfo">
 			<h1>Team</h1>
 		</div>
 		<div id="teaminfo" class="container hide-mobile">
+			<br />
 			<div class="row">
 				<div class="col s12 m3">
 					<div class="member">
@@ -196,14 +190,14 @@
 			</div>
 		</div>
 	<div id="faq">
-		<div class="banner" onclick="expand('#faqinfo');">
+		<div class="banner" data-target="#faqinfo">
 			<h1>FAQ</h1>
 		</div>
 		<div id="faqinfo" class="container row hide-mobile">
 		</div>
 	</div>
 
-	<div class="dropdown black">
+	<div class="navigator black hide-mobile">
 		<ul>
 			<li><a href="#about" class="scroll">About</a></li>
 			<li><a href="#sponsors" class="scroll">Sponsors</a></li>
@@ -235,6 +229,7 @@
 	</footer>
 
 	<script type="text/javascript">
+		var hidden = [];
 		$('#countdown').hide();
 		countdown();
 		window.setInterval(countdown, 1000);
@@ -242,6 +237,7 @@
 		if($(window).width() < 768) {
 			$.each($('.hide-mobile'), function(k, v) {
 				$(v).hide();
+				hidden.push('#' + $(v).attr('id'));
 			});
 		}
 
@@ -278,25 +274,17 @@
 			$('#countdown').hide();
 		});
 
-		function expand(elem) {
-			$(elem).slideDown(1000);
-		}
-
-		$('.dropdown').hide();
-		var fixed = false;
-    	$(document).scroll(function() {
-        	if ($(this).scrollTop() > 250) {
-            	if (!fixed) {
-                	fixed = true;
-                	$('.dropdown').show();
-            	}
-        	} else {
-            	if (fixed) {
-                	fixed = false;
-        	        $('.dropdown').hide();
-        	    }
-        	}
-    	});
+		$('.banner').click(function() {
+			var elem = $(this).attr('data-target');
+			var i = hidden.indexOf(elem);
+			if(i > -1) {
+				$(elem).slideDown(1000);
+				hidden.splice(i);
+			} else {
+				$(elem).slideUp(1000);
+				hidden.push(elem);
+			}
+		});
 
     	$('.scroll').click(function() {
     		var elem = $($(this).attr('href'));

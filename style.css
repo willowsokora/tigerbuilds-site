@@ -1,25 +1,17 @@
 body {
 	font-family: Outage;
+	font-size: 18px;
 	color: #333132;
-	font-weight: #333132;
-    font-size: 18px;
+	background-color: #FEF8E2;
 }
 
 .fill {
 	background-color: #574d4f;
-	background: url("columns.jpg") center;
+	background: url("res/columns.jpg") center;
 	background-size: cover;
 	position: relative;
 	width: 100%;
 	height: 100vh;
-}
-
-.floater {
-	text-align: center;
-	left: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    position: absolute;   
 }
 
 .content {
@@ -28,6 +20,11 @@ body {
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 15px;
+    text-align: center;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    position: absolute;
 }
 
 .logo {
@@ -43,8 +40,6 @@ body {
 }
 
 a {
-	color: #333132;
-	margin-bottom: 10px;
 	color: #333132;
 }
 
@@ -78,9 +73,76 @@ h2 {
 	bottom: 0;
 	position: absolute;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -42%);
 }
 
-@media only screen and (max-width: 768px) {
-	.hide-mobile { display: none !important; }
+h1 {
+	margin: 0px;
+	cursor: pointer;
+}
+
+.banner {
+	width: 100%;
+	text-align: center;
+	background-color: #333132;
+	color: #FEF8E2;
+	padding: 10px;
+}
+
+p {
+	font-size: 18;
+	font-family: "Source Sans Pro", sans-serif;
+	margin: 0px;
+}
+
+.member img {
+	max-width: 50%;
+}
+
+.member {
+	text-align: center;
+}
+
+h6 {
+	font-size: 130%;
+}
+
+footer {
+	background-color: #f89939 !important;
+	color: #333132 !important;
+}
+
+.footer-copyright {
+	color: #333132 !important;
+}
+
+.navigator {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	text-align: right;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 3px;
+}
+
+.navigator a {
+	color: #FEF8E2 !important;
+}
+
+.tab {
+	background-color: #FEF8E2;
+}
+
+.indicator {
+	background-color: #f89939 !important;
+}
+
+.tablink {
+	color: #333132 !important;
+	font-size: 160% !important;
+}
+
+p.major {
+	font-style: italic;
 }

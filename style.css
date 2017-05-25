@@ -146,3 +146,15 @@ footer {
 p.major {
 	font-style: italic;
 }
+
+.row {
+	margin-bottom: 1rem;
+}
+
+#sponsorinfo > .row {
+	padding: 2.5rem 0;
+}
+
+#platinum {
+	margin-left: 20.83333%;
+}

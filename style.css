@@ -25,6 +25,7 @@ body {
     transform: translate(-50%, -50%);
     top: 50%;
     position: absolute;
+	min-width: 28.5rem;
 }
 
 .logo {
@@ -57,7 +58,8 @@ label {
 }
 
 h2 {
-    display: inline;
+    font-size: 3.33rem;
+	display: inline;
 }
 
 .white {
@@ -131,6 +133,7 @@ footer {
 }
 
 .tab {
+	font-size: .737rem;
 	background-color: #FEF8E2;
 }
 

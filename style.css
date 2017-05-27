@@ -151,14 +151,15 @@ p.major {
 	margin-bottom: 1rem;
 }
 
-#sponsorinfo > .row {
-	padding: 2.5rem 0;
+#sponsorinfo > .row .col {
+	padding: 1rem 0;
 }
 
 #platinum {
 	margin-left: 20.83333%;
 }
 
+/* Because the Microsoft Logo is a different shape...*/
 #cerner {
-	padding-top: 5rem;
+	margin-top: 6rem;
 }

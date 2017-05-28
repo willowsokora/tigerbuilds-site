@@ -25,6 +25,7 @@ body {
     transform: translate(-50%, -50%);
     top: 50%;
     position: absolute;
+	min-width: 28.5rem;
 }
 
 .logo {
@@ -57,7 +58,8 @@ label {
 }
 
 h2 {
-    display: inline;
+    font-size: 3.33rem;
+	display: inline;
 }
 
 .white {
@@ -131,6 +133,7 @@ footer {
 }
 
 .tab {
+	font-size: .737rem;
 	background-color: #FEF8E2;
 }
 
@@ -151,10 +154,15 @@ p.major {
 	margin-bottom: 1rem;
 }
 
-#sponsorinfo > .row {
-	padding: 2.5rem 0;
+#sponsorinfo > .row .col {
+	padding: 1rem 0;
 }
 
 #platinum {
 	margin-left: 20.83333%;
+}
+
+/* Because the Microsoft Logo is a different shape...*/
+#cerner {
+	margin-top: 6rem;
 }

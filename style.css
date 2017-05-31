@@ -1,31 +1,31 @@
 body {
-	font-family: Outage;
-	font-size: 18px;
-	color: #333132;
-	background-color: #FEF8E2;
+   font-family: Outage;
+   font-size: 18px;
+   color: #333132;
+   background-color: #FEF8E2;
 }
 
 .fill {
-	background-color: #574d4f;
-	background: url("res/columns.jpg") center;
-	background-size: cover;
-	position: relative;
-	width: 100%;
-	height: 100vh;
+   background-color: #574d4f;
+   background: url("res/columns.jpg") center;
+   background-size: cover;
+   position: relative;
+   width: 100%;
+   height: 100vh;
 }
 
 .content {
-	background-color: RGBA(87, 77, 79, 0.6);
+   background-color: RGBA(87, 77, 79, 0.6);
     color: #f89939;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 15px;
     text-align: center;
-	left: 50%;
+   left: 50%;
     transform: translate(-50%, -50%);
     top: 50%;
     position: absolute;
-	min-width: 28.5rem;
+   min-width: 28.5rem;
 }
 
 .logo {
@@ -41,7 +41,7 @@ body {
 }
 
 a {
-	color: #333132;
+   color: #333132;
 }
 
 @font-face {
@@ -59,110 +59,127 @@ label {
 
 h2 {
     font-size: 3.33rem;
-	display: inline;
+   display: inline;
 }
 
 .white {
-	background-color: #FEF8E2 !important;
+   background-color: #FEF8E2 !important;
 }
 
 .black {
-	background-color: #333132!important
+   background-color: #333132!important
 }
 
 .bottom {
-	text-align: center;
-	bottom: 0;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -42%);
+   text-align: center;
+   bottom: 0;
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, -42%);
 }
 
 h1 {
-	margin: 0px;
-	cursor: pointer;
+   margin: 0px;
+   cursor: pointer;
+}
+
+.wide-container{
+   width: 80%;
+   margin-top: 20px;
+   padding-bottom: 30px;
+}
+
+#faqinfo{
+   padding-top: 30px;
+   margin-bottom: 40px;
+}
+
+.info-header{
+   /*margin-bottom: 60px;*/
+   padding-top: 25px;
+   padding-bottom: 25px
 }
 
 .banner {
-	width: 100%;
-	text-align: center;
-	background-color: #333132;
-	color: #FEF8E2;
-	padding: 10px;
+   width: 100%;
+   text-align: center;
+   background-color: #333132;
+   color: #FEF8E2;
+   padding: 30px;
 }
 
 p {
-	font-size: 18;
-	font-family: "Source Sans Pro", sans-serif;
-	margin: 0px;
+   font-size: 18;
+   font-family: "Source Sans Pro", sans-serif;
+   margin: 0px;
 }
 
 .member img {
-	max-width: 50%;
+   max-width: 50%;
 }
 
 .member {
-	text-align: center;
+   text-align: center;
 }
 
 h6 {
-	font-size: 130%;
+   font-size: 130%;
 }
 
 footer {
-	background-color: #f89939 !important;
-	color: #333132 !important;
+   background-color: #f89939 !important;
+   color: #333132 !important;
 }
 
 .footer-copyright {
-	color: #333132 !important;
+   color: #333132 !important;
 }
 
 .navigator {
-	position: fixed;
-	right: 10px;
-	bottom: 10px;
-	text-align: right;
-	padding-left: 15px;
-	padding-right: 15px;
-	border-radius: 3px;
+   position: fixed;
+   right: 10px;
+   bottom: 10px;
+   text-align: right;
+   padding-left: 15px;
+   padding-right: 15px;
+   border-radius: 3px;
 }
 
 .navigator a {
-	color: #FEF8E2 !important;
+   color: #FEF8E2 !important;
 }
 
 .tab {
-	font-size: .737rem;
-	background-color: #FEF8E2;
+   font-size: .737rem;
+   background-color: #FEF8E2;
 }
 
 .indicator {
-	background-color: #f89939 !important;
+   background-color: #f89939 !important;
 }
 
 .tablink {
-	color: #333132 !important;
-	font-size: 160% !important;
+   color: #333132 !important;
+   font-size: 160% !important;
 }
 
 p.major {
-	font-style: italic;
+   font-style: italic;
 }
 
 .row {
-	margin-bottom: 1rem;
+   margin-bottom: 1rem;
 }
 
 #sponsorinfo > .row .col {
-	padding: 1rem 0;
+   padding: 1rem 0;
 }
 
 #platinum {
-	margin-left: 20.83333%;
+   margin-left: 20.83333%;
 }
 
 /* Because the Microsoft Logo is a different shape...*/
 #cerner {
-	margin-top: 6rem;
+   margin-top: 6rem;
 }

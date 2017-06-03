@@ -16,49 +16,53 @@ body {
 
 .content {
 	background-color: RGBA(87, 77, 79, 0.6);
-    color: #f89939;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 15px;
-    text-align: center;
+	color: #f89939;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 15px;
+	text-align: center;
 	left: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	position: absolute;
 	min-width: 28.5rem;
 }
 
 .logo {
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    margin: auto;
+	width: 100%;
+	max-width: 300px;
+	display: block;
+	margin: auto;
 }
 
 .btn-large {
-    color: #f89939;
-    margin-bottom: 10px;
+	color: #f89939;
+	margin-bottom: 10px;
 }
 
 a {
+	color: #1E8DAF;
+}
+
+.fa, .email {
 	color: #333132;
 }
 
 @font-face {
-    font-family: "Outage";
-    src: url("Outage.ttf") format("truetype");
+	font-family: "Outage";
+	src: url("Outage.ttf") format("truetype");
 }
 
 #signupbutton {
-    float: right;
+	float: right;
 }
 
 label {
-    padding-top: 10px;
+	padding-top: 10px;
 }
 
 h2 {
-    font-size: 3.33rem;
+	font-size: 3.33rem;
 	display: inline;
 }
 
@@ -88,7 +92,7 @@ h1 {
 	text-align: center;
 	background-color: #333132;
 	color: #FEF8E2;
-	padding: 10px;
+	padding: 30px;
 }
 
 p {
@@ -165,4 +169,20 @@ p.major {
 /* Because the Microsoft Logo is a different shape...*/
 #cerner {
 	margin-top: 6.5%;
+}
+
+.wide-container{
+	width: 90%;
+	margin-top: 20px;
+	padding-bottom: 30px;
+}
+
+#faqinfo{
+	padding-top: 30px;
+	margin-bottom: 40px;
+}
+
+.info-header{
+	padding-top: 25px;
+	padding-bottom: 25px
 }

@@ -40,8 +40,8 @@ body {
 	margin-bottom: 10px;
 }
 
-a {
-	color: #f89939;
+a, a.email {
+   color: #f89939;
 }
 
 .fa, .email {

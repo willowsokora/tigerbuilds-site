@@ -40,8 +40,8 @@ body {
 	margin-bottom: 10px;
 }
 
-a {
-	color: #1E8DAF;
+a, a.email {
+   color: #f89939;
 }
 
 .fa, .email {
@@ -164,11 +164,20 @@ p.major {
 
 #platinum {
 	margin-left: 20.83333%;
+   margin-bottom: 5%;
+   border-style: solid;
+   border-color: #f89939;
+   padding: 4%!important;
+   border-radius: 3%;
 }
 
 /* Because the Microsoft Logo is a different shape...*/
 #cerner {
 	margin-top: 6.5%;
+}
+
+.bronze{
+   width: 80%;
 }
 
 .wide-container{

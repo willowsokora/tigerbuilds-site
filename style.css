@@ -171,9 +171,8 @@ p.major {
    border-radius: 3%;
 }
 
-/* Because the Microsoft Logo is a different shape...*/
-#cerner {
-	margin-top: 6.5%;
+#vu {
+	margin-top: 1rem;
 }
 
 .bronze{
